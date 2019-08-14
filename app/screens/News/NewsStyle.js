@@ -1,7 +1,7 @@
 
 import styled from "styled-components";
 
-export const HomeContainer = styled.div`
+export const NewContainer = styled.div`
   padding: 10px;
   display: grid;
   grid-template-columns: auto auto auto;

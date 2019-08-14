@@ -1,9 +1,9 @@
 // @flow
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-import routes from '../../constants/routes';
-import { HomeContainer, ItemContainer } from './HomeStyle.js';
+import { HomeContainer } from './HomeStyle';
+import { Tag } from "../../components";
 import { CATEGORIES } from "../../constants/data";
 
 export default function Home(props) {
@@ -13,9 +13,7 @@ export default function Home(props) {
       {
         CATEGORIES.map( (cat, idx) => {
           return (
-            <ItemContainer bg={cat.bg}>
-              <Link to={`/${cat.path}`}>{cat.name}</Link>
-            </ItemContainer>
+            <Tag key={idx} item={cat} />
           )
         })
       }

@@ -7,7 +7,7 @@ import S from "./screens";
 export default () => (
   <Router>
     <Switch>
-      <Route path={routes.COUNTER} component={S.Counter} />
+      <Route path={`${routes.NEWS}/:cat?`} component={S.News} />
       <Route path={routes.HOME} component={S.Home} />
     </Switch>
   </Router>

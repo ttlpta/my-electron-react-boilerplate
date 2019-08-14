@@ -1,4 +1,4 @@
 import Home from "./Home/Home";
-import Counter from "./Counter/Counter";
+import News from "./News/News";
 
-export default { Home, Counter };
+export default { Home, News };
